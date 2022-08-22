@@ -1,22 +1,19 @@
-
 # >>> output some thing
 print("Hello, World!")
 
 # >>> no brackets
 if 5 > 2:
-    print("Five is greater than two!")
+       print("Five is greater than two!")
 
 # >>> my first program
 a = 10
 print(a)
-
 
 # >>> multi line comments
 #This is a comment
 #written in
 #more than just one line
 print("Hello, World!")
-
 
 # >>> Paragraph comments
 """
@@ -30,7 +27,6 @@ print("Hello, World!")
 x = str(3)    # x will be '3'
 y = int(3)    # y will be 3
 z = float(3)  # z will be 3.0
-
 
 # >>> Check type of a variable
 x = 5
@@ -68,6 +64,8 @@ MyVariableName = "John"
 my_variable_name = "John"
 
 
+
+
 # >>> Assigning multiple values
 x, y, z = "Orange", "Banana", "Cherry"
 print(x)
@@ -100,26 +98,19 @@ y = "is "
 z = "awesome"
 print(x + y + z)
 
+
+
 # >>> Global Variables
-
 x = "awesome"
-
 def myfunc():
   x = "fantastic"
   print("Python is " + x)
-
 myfunc()
-
 print("Python is " + x)
-
 # concept
-
 x = "awesome"
-
 def myfunc():
   global x
   x = "fantastic"
-
 myfunc()
-
 print("Python is " + x)
