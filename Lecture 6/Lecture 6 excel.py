@@ -35,24 +35,10 @@ def main_function():
         for i in range(len(x)):
             plt.text(i, y[i], y[i], ha='center')
 
-    xpoints = np.array(year)
-    ypoints = np.array(citations)
-
-    plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)
-
-    plt.bar(xpoints, ypoints)
-
-    addlabels(xpoints, ypoints)
-
-    plt.title("Citations per year")
-
-    # giving X and Y labels
-    plt.xlabel("Year")
-    plt.ylabel("Citations")
-
-    plt.show()
     papers=[str('['+str(x)+']') for x in range(len(citations))]
+
     xpoints = np.array(papers)
+
     ypoints = np.array(citations)
 
     plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)
@@ -64,7 +50,7 @@ def main_function():
     plt.title("Citations per publication")
 
     # giving X and Y labels
-    plt.xlabel("Year")
+    plt.xlabel("Paper ID")
     plt.ylabel("Citations")
 
     plt.show()
